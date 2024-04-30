@@ -29,6 +29,7 @@ export function TodoUI({ props }: { props: TodoUIProps[] }) {
     if (res.ok) {
       console.log('Task Created successfully!');
       alert('Task Created successfully');
+      window.location.reload();
     } else {
       console.error('Failed to edit task:', res.status, res.statusText);
     }
